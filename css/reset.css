@@ -1,0 +1,53 @@
+body, button, input, select, textarea{
+    font-family:helvetica neue,arial,hiragino sans gb,stheiti,wenquanyi micro hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+ol,ul {
+    list-style: none;
+}
+caption,th {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym {
+    border: 0;
+}
+.clearfix:after {
+    content:"\200B";
+    display:block;
+    height:0;
+    clear:both;
+}
+.clearfix {*zoom:1;}/*IE/7/6*/
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.float-left{
+    float:left;
+}
+.float-right{
+    float: right;
+}
+.inline-block{
+    display: inline-block;
+}

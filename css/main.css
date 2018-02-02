@@ -1,41 +1,166 @@
-.container{
-	min-width:480px;
+.container {
+  min-width: 660px;
 }
-.navbar-inverse{
-	background:transparent;
-	border:0;
+.navbar-inverse {
+  background: transparent;
+  border: 0;
+  transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: background-color 0.5s;
+  /* Safari and Chrome */
+  -o-transition: background-color 0.5s;
+  /* Opera */
 }
-.navbar-toggle{/*导航条collapse按钮向上调整*/
-	margin-top: 15px;
+.navbar-inverse .navbar-brand {
+  padding-top: 10px;
 }
-.navbar-fixed-top{
-	margin-top:10px;
+.navbar-inverse .navbar-toggle {
+  border: 0;
 }
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
-	background-color: transparent;
+.navbar-toggle {
+  /*导航条collapse按钮向上调整（手机模式）*/
+  margin-top: 20px;
 }
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-	margin-top:30px;
-	border-color: transparent;
+.navbar-fixed-top {
+  /*导航条增加宽度*/
+  padding-bottom: 20px;
 }
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
-	background-color:rgba(16, 0, 16,.3);
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: transparent;
 }
-.navbar-inverse .navbar-nav>li>a{
-	color:#fff;
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  /*PC模式下导航条的样式*/
+  margin-top: 18px;
 }
-.navbar-collapse-example{
-	height:80px;
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-size: 16px;
 }
-.navbar-collapse-example ul{/*导航条文字向上调整*/
-	margin-top:-15px;
+.navbar-collapse-example {
+  /*重新调整导航栏的高度*/
+  height: 80px;
 }
-.part-one{
-	height:600px;
-	background:-webkit-linear-gradient(120deg,#89f7fe, #66a6ff 70%);
+.part-one {
+  background: url("../img/bg-one.jpg"), -webkit-linear-gradient(120deg, #89f7fe, #66a6ff 70%);
+  background-size: cover;
 }
-
-.part-two{
-	height:600px;
-	background:-webkit-linear-gradient(120deg,#fccb90, #d57eeb 70%);
+.part-one section {
+  /*调整part-one内容位置（移至导航栏下方，距离为导航条80px+导航条上间距30px）*/
+  margin-top: 110px;
+}
+.part-one section .slogan {
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 9%;
+}
+.part-one section .slogan h1,
+.part-one section .slogan h2,
+.part-one section .slogan h3,
+.part-one section .slogan h4,
+.part-one section .slogan h5 {
+  position: relative;
+  color: #fff;
+}
+.part-one section .slogan h1:before {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  font-size: 160%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e600";
+}
+.part-one section .slogan h3:after {
+  position: absolute;
+  bottom: -10px;
+  font-family: "iconfont" !important;
+  font-style: normal;
+  font-size: 150%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e604";
+  margin-top: 20px;
+}
+.part-one section .slogan h4 {
+  margin-top: 20px;
+}
+.part-one section .img {
+  width: 120%;
+}
+.part-two {
+  background: -webkit-linear-gradient(120deg, #fccb90, #d57eeb 70%);
+  background: -o-linear-gradient(120deg, #fccb90, #d57eeb 70%);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(120deg, #fccb90, #d57eeb 70%);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(120deg, #fccb90, #d57eeb 70%);
+  /* 标准的语法 */
+  padding: 60px 0;
+}
+.part-two header {
+  text-align: center;
+  color: #fff;
+}
+.part-two section {
+  margin-top: 50px;
+  text-align: center;
+}
+.part-two section ul {
+  padding: 0;
+}
+.part-two section img {
+  float: left;
+  -webkit-box-shadow: 0 0 80px 0 #000000;
+  -moz-box-shadow: 0 0 80px 0 #000000;
+  box-shadow: 0 0 80px 0 #000000;
+  transition: all 0.6s;
+}
+.part-two section img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.part-two section .first img {
+  width: 17%;
+  margin-top: 50px;
+}
+.part-two section .second img {
+  width: 21%;
+  margin-top: 25px;
+}
+.part-two section .third img {
+  width: 24%;
+}
+.part-two section .fourth img {
+  width: 21%;
+  margin-top: 25px;
+}
+.part-two section .fifth img {
+  width: 17%;
+  margin-top: 50px;
+}
+@media (max-width: 992px) {
+  .part-two section .second img {
+    width: 32%;
+  }
+  .part-two section .third img {
+    width: 36%;
+  }
+  .part-two section .fourth img {
+    width: 32%;
+  }
+}
+#myModal .modal-content {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+#myModal .modal-body {
+  position: relative;
+  padding: 0;
+}
+#myModal img {
+  width: 100%;
+  transition: all 0.6s;
 }
