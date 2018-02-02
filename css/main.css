@@ -1,0 +1,41 @@
+.container{
+	min-width:480px;
+}
+.navbar-inverse{
+	background:transparent;
+	border:0;
+}
+.navbar-toggle{/*导航条collapse按钮向上调整*/
+	margin-top: 15px;
+}
+.navbar-fixed-top{
+	margin-top:10px;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background-color: transparent;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	margin-top:30px;
+	border-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+	background-color:rgba(16, 0, 16,.3);
+}
+.navbar-inverse .navbar-nav>li>a{
+	color:#fff;
+}
+.navbar-collapse-example{
+	height:80px;
+}
+.navbar-collapse-example ul{/*导航条文字向上调整*/
+	margin-top:-15px;
+}
+.part-one{
+	height:600px;
+	background:-webkit-linear-gradient(120deg,#89f7fe, #66a6ff 70%);
+}
+
+.part-two{
+	height:600px;
+	background:-webkit-linear-gradient(120deg,#fccb90, #d57eeb 70%);
+}
