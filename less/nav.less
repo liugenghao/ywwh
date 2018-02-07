@@ -1,0 +1,33 @@
+//@import "module";
+@import "est/all";
+.navbar-inverse {
+  background: transparent;
+  border: 0;
+  .transition(background-color,.5s);
+  .navbar-brand {
+    padding-top: 10px;
+  }
+  .navbar-toggle {
+    border: 0;
+  }
+}
+
+.navbar-toggle { /*导航条collapse按钮向上调整（手机模式）*/
+  margin-top: 20px;
+}
+.navbar-fixed-top { /*导航条增加宽度*/
+  padding-bottom: 20px;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: transparent;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { /*PC模式下导航条的样式*/
+  margin-top: 18px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-size: 16px;
+}
+.navbar-collapse-example { /*重新调整导航栏的高度*/
+  height: 80px;
+}

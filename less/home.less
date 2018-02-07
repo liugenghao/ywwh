@@ -1,0 +1,125 @@
+@import "est/all";
+.part-one {
+  background: url("../img/bg-one.jpg");
+  background-size: cover;
+  section { /*调整part-one内容位置（移至导航栏下方，距离为导航条80px+导航条上间距30px）*/
+    margin-top: 110px;
+    .slogan {
+      white-space: nowrap;
+      text-align: center;
+      padding-top: 9%;
+      h1, h2, h3, h4, h5 {
+        position: relative;
+        color: #fff;
+      }
+
+      h1:before {
+        font-family: "iconfont" !important;
+        font-style: normal;
+        font-size: 160%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e600";
+      }
+      h3:after {
+        position: absolute;
+        bottom: -10px;
+        font-family: "iconfont" !important;
+        font-style: normal;
+        font-size: 150%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e604";
+        margin-top: 20px;
+      }
+      h4 {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+.part-two {
+  .linear-gradient(120deg, #fccb90, #d57eeb 70%);
+  padding: 60px 0;
+  header {
+    text-align: center;
+    color: #fff;
+    h3 {
+
+    }
+
+  }
+  section {
+    margin-top: 50px;
+    text-align: center;
+    ul {
+      padding: 0;
+    }
+    img {
+      float: left;
+      .box-shadow(0, 0, 80px, 0, #000000);
+      transition: all 0.6s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+
+    .first img {
+      width: 17%;
+      margin-top: 50px;
+    }
+    .second img {
+      width: 21%;
+      margin-top: 25px;
+    }
+    .third img {
+      width: 24%;
+    }
+    .fourth img {
+      width: 21%;
+      margin-top: 25px;
+    }
+    .fifth img {
+      width: 17%;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .part-two section {
+    .second img {
+      width: 32%;
+    }
+    .third img {
+      width: 36%;
+    }
+    .fourth img {
+      width: 32%;
+    }
+  }
+}
+
+#myModal {
+  .modal-content {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+
+  }
+  .modal-body {
+    position: relative;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    .transition(all,0.6s);
+  }
+}
+
+@media (max-width: 768px) {
+  .part-one section img {
+    width: 100%;
+  }
+}

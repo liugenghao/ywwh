@@ -1,0 +1,17 @@
+.linear-gradient(@degree;@start;@end) {
+  background: -webkit-linear-gradient(@degree, @start, @end);
+  background: -o-linear-gradient(@degree, @start, @end); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(@degree, @start, @end); /* Firefox 3.6 - 15 */
+  background: linear-gradient(@degree, @start, @end); /* 标准的语法 */
+}
+.box-shadow(@x;@y;@ext;@mg;@color) {
+  -webkit-box-shadow: @x @y @ext @mg @color;
+  -moz-box-shadow: @x @y @ext @mg @color;
+  box-shadow: @x @y @ext @mg @color;
+}
+.transition(@type;@duration){
+  transition: @type @duration;
+  -moz-transition:  @type @duration;
+  -webkit-transition: @type @duration;
+  -o-transition: @type @duration;
+}
